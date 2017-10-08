@@ -8005,3 +8005,24 @@ a.skip-link {
 
 .navbar-brand img {
   width: 350px; }
+
+.move-down {
+  margin-top: 65px; }
+
+.move-down.admin-bar nav.navbar.fixed-top {
+  margin-top: 32px; }
+  @media screen and (max-width: 782px) {
+    .move-down.admin-bar nav.navbar.fixed-top {
+      margin-top: 46px; } }
+
+.full-page-header {
+  min-height: calc(100vh - 65px);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.adminbar .full-page-header {
+  min-height: calc(100vh - 97px); }
+  @media screen and (max-width: 782px) {
+    .adminbar .full-page-header {
+      min-height: calc(100vh - 111px); } }

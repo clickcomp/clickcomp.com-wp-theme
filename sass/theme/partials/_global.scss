@@ -1,0 +1,16 @@
+.full-page-header {
+  min-height: calc(100vh - #{$nav-height});
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.adminbar {
+  .full-page-header {
+    min-height: calc(100vh - #{$nav-height + $admin-nav-height});
+
+    @media screen and ( max-width: 782px ) {
+      min-height: calc(100vh - #{$nav-height + $mobile-admin-nav-height});
+    }
+  }
+}
