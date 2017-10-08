@@ -8,10 +8,14 @@
  * @package understrap
  */
 
-get_header();
+get_header(); ?>
 
-while ( have_posts() ) : the_post();
+<main class="site-main" id="main">
+
+<?php while ( have_posts() ) : the_post();
 	get_template_part( 'loop-templates/content', 'empty' );
-endwhile;
+endwhile; ?>
 
-get_footer();
+</main>
+
+<?php get_footer(); ?>
