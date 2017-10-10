@@ -8028,6 +8028,10 @@ a.skip-link {
     .admin-bar .full-page-header {
       min-height: calc(100vh - 111px); } }
 
+.grey-section {
+  background-color: #555555;
+  color: #FFF; }
+
 .down-arrow {
   position: absolute;
   bottom: 10px;
@@ -8051,6 +8055,9 @@ a.skip-link {
   100% {
     top: 0; } }
 
+.btn-outline-light.active, .btn-outline-light:active, .btn-outline-light:focus, .btn-outline-light:hover {
+  color: #333; }
+
 #home header {
   display: flex;
   align-items: center;
@@ -8060,12 +8067,13 @@ a.skip-link {
     text-shadow: 2px 2px 0px #333, 2px 2px 6px #333;
     font-size: 4em; }
 
-#home .grey-section {
-  background-color: #555555;
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-  #home .grey-section h2 {
-    text-align: center;
-    color: #FFF;
-    font-size: 4em; }
+#home-slogan {
+  padding: 100px 0;
+  text-align: center;
+  color: #FFF;
+  font-size: 4em; }
+
+#home-services {
+  text-align: center; }
+  #home-services i {
+    font-size: 8rem; }

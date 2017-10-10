@@ -1,0 +1,8 @@
+.btn-outline-light {
+  &.active,
+  &:active,
+  &:focus,
+  &:hover {
+    color: #333;
+  }
+}

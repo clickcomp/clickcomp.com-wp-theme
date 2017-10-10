@@ -10,17 +10,20 @@
       font-size: 4em;
     }
   }
+}
 
-  .grey-section {
-    background-color: $secondary-color;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+#home-slogan {
+  padding: 100px 0;
+  text-align: center;
+  color: #FFF;
+  font-size: 4em;
+  
+}
 
-    h2 {
-      text-align: center;
-      color: #FFF;
-      font-size: 4em;
-    }
+#home-services {
+  text-align: center;
+
+  i {
+    font-size: 8rem;
   }
 }
