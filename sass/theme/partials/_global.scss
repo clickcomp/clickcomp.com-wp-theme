@@ -1,16 +1,54 @@
 .full-page-header {
+  position: relative;
   min-height: calc(100vh - #{$nav-height});
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.adminbar {
+.admin-bar {
   .full-page-header {
     min-height: calc(100vh - #{$nav-height + $admin-nav-height});
 
     @media screen and ( max-width: 782px ) {
       min-height: calc(100vh - #{$nav-height + $mobile-admin-nav-height});
     }
+  }
+}
+
+.down-arrow {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  a {
+    text-decoration: none;
+    color: #FFF;
+    transition: all 0.5s;
+
+    i {
+      position: relative;
+      animation: down-arrow-bounce 1.5s infinite;
+    }
+
+    &:hover,
+    &:focus {
+      color: darken(#FFF, 10%);
+    }
+  }
+}
+
+@keyframes down-arrow-bounce {
+  0% {
+    top: 0
+  }
+
+  50% {
+    top: -10px;
+  }
+
+  100% {
+    top: 0;
   }
 }
