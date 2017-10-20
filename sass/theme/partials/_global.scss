@@ -1,13 +1,21 @@
-.full-page-header {
+.full-viewport,
+.full-viewport--nav {
   position: relative;
-  min-height: calc(100vh - #{$nav-height});
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+.full-viewport {
+  min-height: 100vh;
+}
+
+.full-viewport--nav {
+  min-height: calc(100vh - #{$nav-height});
+}
+
 .admin-bar {
-  .full-page-header {
+  .full-viewport--nav {
     min-height: calc(100vh - #{$nav-height + $admin-nav-height});
 
     @media screen and ( max-width: 782px ) {

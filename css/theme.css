@@ -8015,17 +8015,23 @@ a.skip-link {
     .move-down.admin-bar nav.navbar.fixed-top {
       margin-top: 46px; } }
 
-.full-page-header {
+.full-viewport,
+.full-viewport--nav {
   position: relative;
-  min-height: calc(100vh - 65px);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover; }
 
-.admin-bar .full-page-header {
+.full-viewport {
+  min-height: 100vh; }
+
+.full-viewport--nav {
+  min-height: calc(100vh - 65px); }
+
+.admin-bar .full-viewport--nav {
   min-height: calc(100vh - 97px); }
   @media screen and (max-width: 782px) {
-    .admin-bar .full-page-header {
+    .admin-bar .full-viewport--nav {
       min-height: calc(100vh - 111px); } }
 
 .grey-section {
@@ -8066,6 +8072,10 @@ a.skip-link {
     text-align: center;
     text-shadow: 2px 2px 0px #333, 2px 2px 6px #333;
     font-size: 4em; }
+
+#home .grey-section {
+  display: flex;
+  align-items: center; }
 
 #home-slogan {
   padding: 100px 0;

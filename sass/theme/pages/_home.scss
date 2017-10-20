@@ -10,6 +10,11 @@
       font-size: 4em;
     }
   }
+
+  .grey-section {
+    display: flex;
+    align-items: center;
+  }
 }
 
 #home-slogan {
@@ -17,12 +22,10 @@
   text-align: center;
   color: #FFF;
   font-size: 4em;
-  
 }
 
 #home-services {
   text-align: center;
-
   i {
     font-size: 8rem;
   }
